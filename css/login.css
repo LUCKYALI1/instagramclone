@@ -1,0 +1,239 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body{
+background-color: rgba(255, 255, 255, 0.952) ;
+height: 100vh;
+margin: 0;
+font-family: 'Roboto', sans-serif;
+background-color: white;
+
+
+}
+.main{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+.left{
+margin-top: 20px;
+height: 670px;
+width: 480px;
+position: relative;
+background-repeat:no-repeat ;
+}
+.left>img{
+width: 100%;
+height: 100%;
+}
+#slideshowimg {
+position: absolute;
+top: 26px;
+left: 158px;
+width: 263px;
+height: 570px;
+}
+.right{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+width: 360px;
+
+}
+.insta-logo{
+width: 190px;
+height: 110px;
+}
+.right{
+background: white;
+}
+.login-info{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+width: 360px;
+padding: 20px;
+border: 0.9px solid #9f9e9e;
+}
+#login-box {
+width: 280px;
+height: 5vh;
+background-color: #f6f6f6;
+outline: none;
+border: 0.1px solid #9f9e9e;
+padding: 8px;
+margin: 5px 0 ;
+font-size: 12px;
+}
+#login-btn{
+width: 280px;
+height: 4vh;
+background: rgba(0, 148, 246, 0.664);
+border-radius: 10px;
+outline: none;
+border: none;
+text-align: center;
+text-decoration: none;
+padding-top: 7px;
+color: white;
+font-size: 14px;
+font-weight: 600;
+margin-top: 10px;
+
+}
+h3{
+display: flex;
+font-size: 14px;
+align-items: center;
+justify-content: center;
+font-size: 14px;
+color: grey;
+margin-top: 10px;
+}
+#left{
+    position: relative;
+    border-bottom: 1px solid grey;
+    left: -10px;
+    width: 90px;
+}
+#right{
+    position: relative;
+    border-bottom: 1px solid grey;
+    right: -10px;
+    width: 90px;
+}
+
+#facebook-login{
+display: flex;
+flex-direction: row;
+}
+#facebook-login>h5,i{
+padding: 5px;
+margin-top: 17px;
+color: #3d598a;
+}
+#forgetpass{
+margin-top: 10px;
+font-size: 12px;
+font-weight: 300;
+padding-bottom: 30px;
+
+}
+#create-acc{ 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 0.9px solid #9f9e9e;
+width: 360px;
+margin-top: 10px;
+padding: 15px 10px 20px 10px;
+height: fit-content;
+}
+#createacclink{
+font-size: 14px;
+font-weight: 500;
+}
+#createacclink>span{
+font-size: 15px;
+color: rgb(0,149, 246);
+}
+#getapp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-top: 10px;
+height: fit-content;;
+}
+#getapp>h3{
+font-size: 14px;
+font-weight: 500;
+}
+#getapp-img>img{
+margin-top: 15px;
+width: 140px;
+height: 45px;
+margin: 10px 5px;
+gap: 10px;
+border-radius: 10px;
+}
+.metadescription{
+display: block;
+width: 80%;
+margin: auto;
+text-align: center;
+margin-bottom: 10px;
+/* display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; */
+
+}
+#metalist{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+#metalist>li{
+list-style: none;
+word-wrap: break-word;
+padding: 0 7px;
+font-size: 12px;
+color: #9f9e9e;
+
+}
+.metaheadings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+}
+.metaheadings>i{
+    font-size: 12px;
+    font-weight: 400;
+}
+.fs-head>h3{
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+
+.sec-head>h3{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 840px) {
+.left{
+display: none;
+}
+.right{
+margin-top: 60px;
+}
+.login-info{
+
+border: none;
+}
+#create-acc{
+border: none;
+}
+}

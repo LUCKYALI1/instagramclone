@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram</title>
+<link rel="stylesheet" href="css/login.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/fav-icon-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <img src="img/loginpage-bg.png" alt="" srcset="">
+        <img id="slideshowimg" class="mySlides" src="img/screenshot1-2x.png" alt="" srcset="">
+        <img id="slideshowimg" class="mySlides" src="img/screenshot2-2x.png" alt="" srcset="">
+        <img id="slideshowimg" class="mySlides" src="img/screenshot3-2x.png" alt="" srcset="">
+    </div>
+    <div class="right">
+        <div class="login-info">
+        <img class="insta-logo" src="img/insta-txt-logo-removebg-preview.png" alt="">
+        <input id="login-box" type="text" placeholder="Phone number , username, or email">
+        <input id="login-box" type="password" placeholder="Password">
+        <a href="pages/index.htm" id="login-btn" >Log in</a>
+        <h3><span id="left"></span>OR<span id="right"></span></h3>
+        <div id="facebook-login">
+            <i class="fa-brands fa-square-facebook" style="color: #3d598a;"></i><h5>Log in with Facebook</h5>
+        </div>
+        <h3 id="forgetpass">Forget password?</h3>
+        </div>
+        <div id="create-acc">
+            <h3 id="createacclink">Don't have an account? <span>Sign up</span></h3>
+        </div>
+        <div id="getapp">
+            <h3>Get the app.</h3>
+            <div id="getapp-img">
+                <img src="img/getitonplaystore.png" alt="">
+                <img src="img/getitonwindows.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="metadescription">
+    <ul id="metalist">
+        <li>Meta</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Jobs</li>
+        <li>Help</li>
+        <li>Api</li>
+        <li>Privacy</li>
+        <li>Term</li>
+        <li>Location</li>
+        <li>Instagram Lite</li>
+        <li>Threads</li>
+        <li>contact Uploading & Non-users</li>
+        <li>Meta Verified</li>
+    </ul>
+</div>
+<div class="metaheadings">
+<div class="fs-head"><h3>English </h3></div>
+
+<div class="sec-head"><h3>2023 Instagram from Meta</h3></div>
+</div>
+<script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+      x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 3000); 
+    }
+    </script>
+<script src="https://kit.fontawesome.com/d505ebb14f.js" crossorigin="anonymous"></script>
+</body>
+</html>
